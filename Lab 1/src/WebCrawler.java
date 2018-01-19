@@ -19,7 +19,9 @@ import java.util.Set;
 
 public class WebCrawler {
 
-    public static Set<URI> visitedURL = new HashSet<>();
+    // URI is used because URL equals method is not good
+    // Source: Stackoverflow
+    public static Set<URI> visitedPages = new HashSet<URI>();
 
     /**
      * Main entry point of the program
@@ -34,7 +36,7 @@ public class WebCrawler {
         try {
             String previousURL = args[0];
             String currentURL = args[0];
-            visitedURL.add(new URI(currentURL));
+            visitedPages.add(new URI(currentURL));
             int numHops = Integer.parseInt(args[1]);
             if (numHops < 0) {
                 System.out.println("Invalid number of hops. Need to be positive");
@@ -73,16 +75,16 @@ public class WebCrawler {
      */
     public static String getNextURL(String currentURL) {
         try {
-            // Uncomment the line below to see the URL it visited
-            // System.out.println(currentURL);
+
+            System.out.println(currentURL);
             // Get the HTML of the page given URL and get all query all absolute reference
             Document website = Jsoup.connect(currentURL).get();
-            Elements abosoluteURLsList = website.select("a[href]");
-            for (int i = 0; i < abosoluteURLsList.size(); i++) {
-                String tempURL = abosoluteURLsList.get(i).attr("abs:href");
+            Elements absoluteURL = website.select("a[href]");
+            for (int i = 0; i < absoluteURL.size(); i++) {
+                String tempURL = absoluteURL.get(i).attr("abs:href");
                 URI visitedPage = new URI(tempURL);
-                if (!visitedURL.contains(visitedPage)) {
-                    visitedURL.add(visitedPage);
+                if (!visitedPages.contains(visitedPage)) {
+                    visitedPages.add(visitedPage);
                     return tempURL;
                 }
             }
