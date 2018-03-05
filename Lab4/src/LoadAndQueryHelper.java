@@ -74,8 +74,11 @@ public class LoadAndQueryHelper {
             Scanner scanner = new Scanner(url.openStream());
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
+                if (line.isEmpty()) break;
+                line = line.replaceAll("\\s+", " ");
                 // separate the data within the line by space
                 List<String> unformattedData = new ArrayList<String>(Arrays.asList(line.trim().split("\\s+")));
+                System.out.println(unformattedData.toString());
                 Item itemToPut = prepareDataToInsert(unformattedData);
                 table.putItem(itemToPut);
             }
