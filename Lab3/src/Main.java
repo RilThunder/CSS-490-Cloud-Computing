@@ -127,7 +127,7 @@ public class Main {
         String keyForFileOnS3 = directoryNumber + fileToUpload.getCanonicalPath();
         System.out.println("This item is going to be uploaded " + fileToUpload.getCanonicalPath());
         if (fileToUpload.isDirectory() && fileToUpload.listFiles().length == 0) {
-            // in the case of empty directory
+            ()      // in the case of empty directory
             System.out.println("Encountering empty directory. Will create empty directory on S3");
             ObjectMetadata metadata = new ObjectMetadata();
             metadata.setContentType("binary/octet-stream"); // S3 handles directories different

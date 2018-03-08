@@ -1,7 +1,9 @@
 /**
  * @author Thuan Tran
- * @date February 7th, 2018
- * This program is used to back up a directory plus its subdirectories to a specific folder on S3
+ * @date March 7th, 2018
+ * Backup program
+ * The user will need to enter his/her account id, password and the directory they want to backup
+ * This program will then recursively go through every files within that directory and upload to the user's folder on S3
  */
 
 import com.amazonaws.AmazonClientException;
@@ -40,9 +42,9 @@ public class Main {
 
     private static final String ACCESS_KEY = "AKIAIEIB3C6IFRRX7K3A";
     private static final String SECRET_KEY = "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";
-    private static final String RESOURCE_NAME = "css490finalproject";
+    private static final String RESOURCE_NAME = "css490finalproject";         // used for both dynamodb table and s3 bucket
     private static final String DYNAMO_DB_HASH_KEY = "user_id";
-    private static final String DYNAMO_DB_SORT_KEY = "password";
+    private static final String DYNAMO_DB_PASSWORD = "password";
 
     private static AmazonS3 client;
     private static TransferManager manager;
@@ -50,9 +52,10 @@ public class Main {
     private static String locationToBackUpTo;
 
     /**
-     * Main entry point of the program. it will get a file path, upload all of them to a unique directory on S3
-     * And print out the item in that unique directory
-     * @param args a one argument command line argument
+     * Main entry point of the program. it will get an account id, password and file path
+     * It will upload all of them to the user's directory on S3
+     * And print out the item in that directory
+     * @param args a one argument command line argument in this order: account id, password, path to directory
      */
     public static void main(String[] args) {
         if (args.length != 3) {
@@ -64,14 +67,12 @@ public class Main {
         String password = args[1];
         String directoryToBackUp = args[2];
         boolean authenticated = authenticateUser(id, password);
-
         if (!authenticated) {
             System.out.println("You are not registered or entered incorrect id/password");
             return;
         }
 
-
-       // For the user, the location to back up to is the folder that has their id
+       // For the user, the location to back up to is the folder that has their unique id
         locationToBackUpTo = id;
         try {
             // depth first search all files given the path
@@ -131,8 +132,12 @@ public class Main {
      */
     private static boolean authenticateUser(String id, String password) {
         boolean authenticated = false;
-        Item item = table.getItem(DYNAMO_DB_HASH_KEY, id, DYNAMO_DB_SORT_KEY,password);
-        return item != null ;
+        Item item = table.getItem(DYNAMO_DB_HASH_KEY, id);
+        if (item == null) {
+            return false;
+        }
+        // check if the password match
+        return item.get(DYNAMO_DB_PASSWORD).equals(password);
     }
 
     /**
@@ -159,8 +164,7 @@ public class Main {
         // canonicalPath is a unique path that allows access to the file
         String keyForFileOnS3 = locationToBackUpTo + fileToUpload.getCanonicalPath();
         System.out.println("This item is going to be uploaded " + fileToUpload.getCanonicalPath());
-        if (fileToUpload.isDirectory() && fileToUpload.listFiles().length == 0) {
-            // in the case of empty directory
+        if (fileToUpload.isDirectory() && fileToUpload.listFiles().length == 0) {  // in the case of empty directory
             System.out.println("Encountering empty directory. Will not upload to S3");
         } else if (fileToUpload.isDirectory()) {
             System.out.println("Encountering normal directories with files. No need to upload to overwrite");
