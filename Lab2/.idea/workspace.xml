@@ -7,171 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ebcad7ce-794b-46e8-86be-d447ddc4663e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_7.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Lab2.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/META-INF/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/META-INF/NOTICE.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/META-INF/maven/commons-codec/commons-codec/pom.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/META-INF/maven/commons-codec/commons-codec/pom.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/META-INF/maven/commons-logging/commons-logging/pom.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/META-INF/maven/commons-logging/commons-logging/pom.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/META-INF/maven/org.apache.httpcomponents/httpclient/pom.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/META-INF/maven/org.apache.httpcomponents/httpcore/pom.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/META-INF/maven/org.apache.httpcomponents/httpcore/pom.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/ExclusionStrategy.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/FieldNamingPolicy$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/FieldNamingPolicy$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/FieldNamingPolicy$3.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/FieldNamingPolicy$4.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/FieldNamingPolicy$5.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/FieldNamingStrategy.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/Gson$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/Gson$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/Gson$3.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/Gson$4.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/Gson$FutureTypeAdapter.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/InstanceCreator.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/JsonDeserializationContext.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/JsonDeserializer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/JsonIOException.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/JsonNull.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/JsonObject.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/JsonParseException.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/JsonSerializationContext.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/JsonSerializer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/JsonSyntaxException.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/LongSerializationPolicy$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/LongSerializationPolicy$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/LongSerializationPolicy.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/TypeAdapter$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/TypeAdapterFactory.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/annotations/Expose.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/annotations/JsonAdapter.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/annotations/SerializedName.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/annotations/Since.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/annotations/Until.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/$Gson$Preconditions.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/$Gson$Types$GenericArrayTypeImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/ConstructorConstructor$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/ConstructorConstructor$10.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/ConstructorConstructor$11.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/ConstructorConstructor$12.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/ConstructorConstructor$13.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/ConstructorConstructor$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/ConstructorConstructor$3.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/ConstructorConstructor$4.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/ConstructorConstructor$5.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/ConstructorConstructor$6.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/ConstructorConstructor$7.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/ConstructorConstructor$8.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/ConstructorConstructor$9.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/Excluder$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/JsonReaderInternalAccess.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/LinkedHashTreeMap$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/LinkedHashTreeMap$AvlIterator.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/LinkedHashTreeMap$EntrySet$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/LinkedHashTreeMap$EntrySet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/LinkedHashTreeMap$KeySet$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/LinkedHashTreeMap$KeySet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/LinkedHashTreeMap$LinkedTreeMapIterator.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/LinkedTreeMap$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/LinkedTreeMap$EntrySet$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/LinkedTreeMap$EntrySet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/LinkedTreeMap$KeySet$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/LinkedTreeMap$KeySet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/LinkedTreeMap$LinkedTreeMapIterator.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/ObjectConstructor.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/Streams$AppendableWriter$CurrentWrite.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/Streams$AppendableWriter.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/UnsafeAllocator$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/UnsafeAllocator$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/UnsafeAllocator$3.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/UnsafeAllocator$4.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/ArrayTypeAdapter$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/DateTypeAdapter$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/JsonTreeReader$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/JsonTreeWriter$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/ObjectTypeAdapter$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/ObjectTypeAdapter$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory$BoundField.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/SqlDateTypeAdapter$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/TimeTypeAdapter$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/TreeTypeAdapter$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/TreeTypeAdapter$GsonContextImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/TypeAdapters$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/TypeAdapters$11.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/TypeAdapters$12.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/TypeAdapters$13.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/TypeAdapters$16.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/TypeAdapters$17.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/TypeAdapters$19.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/TypeAdapters$20.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/TypeAdapters$23.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/TypeAdapters$24.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/TypeAdapters$25.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/TypeAdapters$26$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/TypeAdapters$26.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/TypeAdapters$3.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/TypeAdapters$30.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/TypeAdapters$31.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/TypeAdapters$32.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/TypeAdapters$4.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/TypeAdapters$6.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/TypeAdapters$8.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/internal/bind/TypeAdapters$9.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/stream/JsonReader$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/stream/JsonScope.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/stream/JsonToken.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/com/google/gson/stream/MalformedJsonException.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/mozilla/public-suffix-list.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/commons/codec/BinaryDecoder.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/commons/codec/BinaryEncoder.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/commons/codec/CharEncoding.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/commons/codec/Charsets.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/commons/codec/Decoder.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/commons/codec/DecoderException.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/commons/codec/Encoder.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/commons/codec/EncoderException.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/commons/codec/StringDecoder.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/commons/codec/StringEncoder.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/commons/codec/StringEncoderComparator.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/commons/codec/binary/Base32InputStream.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/commons/codec/binary/Base32OutputStream.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/commons/codec/binary/Base64.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/commons/codec/binary/Base64InputStream.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/commons/codec/binary/Base64OutputStream.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/commons/codec/digest/DigestUtils.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/commons/codec/digest/MessageDigestAlgorithms.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/commons/codec/digest/UnixCrypt.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/commons/codec/language/AbstractCaverphone.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/commons/codec/language/DoubleMetaphone.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/commons/codec/language/bm/Lang$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/commons/codec/language/bm/ResourceConstants.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/commons/codec/language/bm/Rule$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/commons/codec/language/bm/Rule$PhonemeExpr.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/commons/codec/language/bm/Rule$RPattern.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/commons/codec/language/bm/Rule.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/commons/codec/language/bm/gen_rules_any.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/commons/logging/impl/LogFactoryImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/http/ConnectionReuseStrategy.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/http/FormattedHeader.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/http/impl/client/DefaultRequestDirector.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Lab2_jar/org/apache/http/impl/client/HttpClientBuilder.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../Lab3/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Lab3/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../Lab3/src/Main.java" afterPath="$PROJECT_DIR$/../Lab3/src/Main.java" />
-      <change beforePath="$PROJECT_DIR$/../Lab4/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Lab4/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../Lab4/pom.xml" afterPath="$PROJECT_DIR$/../Lab4/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/../Lab5/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Lab5/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../Lab5/src/Main.java" afterPath="$PROJECT_DIR$/../Lab5/src/Main.java" />
-      <change beforePath="$PROJECT_DIR$/../Lab5/target/classes/Main.class" afterPath="$PROJECT_DIR$/../Lab5/target/classes/Main.class" />
+      <change beforePath="$PROJECT_DIR$/src/WeatherClient.java" afterPath="$PROJECT_DIR$/src/WeatherClient.java" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Lambda/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Lab5Lambda/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -187,10 +24,10 @@
       <file leaf-file-name="WeatherClient.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/WeatherClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="48" column="33" lean-forward="false" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="33" />
+            <state relative-caret-position="1386">
+              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding>
-                <element signature="e#0#4444#0" expanded="true" />
+                <element signature="e#0#4446#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -239,11 +76,11 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="606" />
-    <option name="width" value="1853" />
-    <option name="height" value="1048" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="3905" />
+    <option name="y" value="-4" />
+    <option name="width" value="1015" />
+    <option name="height" value="1924" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -449,15 +286,15 @@
       <workItem from="1516995510656" duration="1086000" />
       <workItem from="1516996763517" duration="817000" />
       <workItem from="1517284816842" duration="69000" />
-      <workItem from="1520471388937" duration="2000" />
+      <workItem from="1520471388937" duration="1783000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13078000" />
+    <option name="totallyTimeSpent" value="14859000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="606" width="1853" height="1048" extended-state="0" />
+    <frame x="3905" y="-4" width="1015" height="1924" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -472,7 +309,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24986508" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -508,7 +345,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#4444#0" expanded="true" />
+            <element signature="e#0#4446#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -527,7 +364,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#4444#0" expanded="true" />
+            <element signature="e#0#4446#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -546,7 +383,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#4444#0" expanded="true" />
+            <element signature="e#0#4446#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -565,7 +402,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#4444#0" expanded="true" />
+            <element signature="e#0#4446#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -584,7 +421,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#4444#0" expanded="true" />
+            <element signature="e#0#4446#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -603,7 +440,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#4444#0" expanded="true" />
+            <element signature="e#0#4446#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -622,7 +459,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#4444#0" expanded="true" />
+            <element signature="e#0#4446#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -641,7 +478,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#4444#0" expanded="true" />
+            <element signature="e#0#4446#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -660,7 +497,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#4444#0" expanded="true" />
+            <element signature="e#0#4446#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -676,10 +513,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WeatherClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="48" column="33" lean-forward="false" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="33" />
+        <state relative-caret-position="1386">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding>
-            <element signature="e#0#4444#0" expanded="true" />
+            <element signature="e#0#4446#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>

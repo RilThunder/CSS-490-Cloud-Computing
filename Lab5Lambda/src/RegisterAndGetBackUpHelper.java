@@ -15,18 +15,30 @@ import com.amazonaws.services.s3.model.S3ObjectSummary;
 import com.amazonaws.services.simpleemail.AmazonSimpleEmailService;
 import com.amazonaws.services.simpleemail.AmazonSimpleEmailServiceClientBuilder;
 import com.amazonaws.services.simpleemail.model.*;
+import com.google.gson.Gson;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.util.EntityUtils;
 
 import java.net.URL;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 
 public class RegisterAndGetBackUpHelper {
-    public static final String RESOURCE_NAME = "css490finalproject";
+    public static final String SUBJECT = "Download link for your data";
     public static final String PRIMARY_KEY = "user_id";
     public static final String PASSWORD = "password";
     public static final String EMAIL = "email";
-    public static final String FROM = "css490finalproject@gmail.com";
-    public static final String SUBJECT = "Download link for your data";
+
+    private static final String RESOURCE_NAME = "css490finalproject";
+    private static final String FROM = "css490finalproject@gmail.com";
+    private static final String SHORTENER_API_KEY = "AIzaSyAASFjuGxkpK2NoEqyxYYLF9IxsEJhLazU";
+    private static final String GOOGLE_SHORTEN_API = "https://www.googleapis.com/urlshortener/v1/url";
+
 
     private LambdaLogger logger;
     private Table table;
@@ -50,6 +62,7 @@ public class RegisterAndGetBackUpHelper {
 
     /**
      * Helper method to get a singleton of the class
+     *
      * @return an instance of RegisterAndGetBackUpHelper
      */
     public static RegisterAndGetBackUpHelper getHelper() {
@@ -62,15 +75,26 @@ public class RegisterAndGetBackUpHelper {
     /**
      * This method is used to register user to use the backup application
      * It will save the user's data into DynamoDB
+     *
      * @param request      a Java POJO class that contains id, password and email address
      * @param lambdaLogger used to log for new user + existing user
      * @return a String that represent the condition of the request
      */
     public String registerUser(RegisterUserRequest request, LambdaLogger lambdaLogger) {
+        if (request == null)
+        {
+            return "Incorrect data recevied. Can't be null";
+        }
         logger = lambdaLogger;
         String id = request.getUser_id();
         String password = request.getPassword();
         String email = request.getEmail();
+        if (id == null || password == null || email == null) {
+            return "The data received is null";
+        }
+        if (id.isEmpty() || password.isEmpty() || password.isEmpty()) {
+            return "Does not accept emtpy data";
+        }
         Item result = table.getItem(PRIMARY_KEY, id);
         if (result != null) {
             logger.log("Received a request with an existing user: " + id);
@@ -87,14 +111,21 @@ public class RegisterAndGetBackUpHelper {
 
     /**
      * This method is invoked when a user want to get the link to all of their files on S3
-     * @param request The Java POJO object that contains the id and password of user
+     *
+     * @param request      The Java POJO object that contains the id and password of user
      * @param lambdaLogger the logging object
      * @return a String that represent the result (Unable to sent email, sent email, incorrect authentication)
      */
     public String getBackUp(GetBackUpRequest request, LambdaLogger lambdaLogger) {
         logger = lambdaLogger;
+        if (request == null) {
+            return "Invalid request";
+        }
         String id = request.getUser_id();
         String password = request.getPassword();
+        if (id == null || id.isEmpty() || password == null || password.isEmpty()) {
+            return "Invalid data received";
+        }
         Item user = table.getItem(PRIMARY_KEY, id);
         if (user == null) {
             logger.log("Incorrect id: " + id + "tried to use the application");
@@ -113,6 +144,7 @@ public class RegisterAndGetBackUpHelper {
 
     /**
      * This helper method is used to send an email that contains pre-signed url of the files on S3 to the user
+     *
      * @param user The user's data that we got from DynamoDB
      * @return a string that represent the result of the sending email action
      */
@@ -129,17 +161,20 @@ public class RegisterAndGetBackUpHelper {
         StringBuilder textBody = new StringBuilder();
         // Go through every file(key) that the user uploaded and create a presigned url
         // Add those to the would be message
-        for (S3ObjectSummary uploadedItem : listOfObjectUploaded) {
-            String key = uploadedItem.getKey();
-            GeneratePresignedUrlRequest presignedUrlRequest = new GeneratePresignedUrlRequest(RESOURCE_NAME, key);
-            presignedUrlRequest.setMethod(HttpMethod.GET);
-            presignedUrlRequest.setExpiration(expiration);
-            URL url = s3Client.generatePresignedUrl(presignedUrlRequest);
-            textBody.append(url.toString());
-            textBody.append("\n"); // add some white space to look nice
-            textBody.append("\n");
-        }
         try {
+            for (S3ObjectSummary uploadedItem : listOfObjectUploaded) {
+                String key = uploadedItem.getKey();
+                GeneratePresignedUrlRequest presignedUrlRequest = new GeneratePresignedUrlRequest(RESOURCE_NAME, key);
+                presignedUrlRequest.setMethod(HttpMethod.GET);
+                presignedUrlRequest.setExpiration(expiration);
+                URL url = s3Client.generatePresignedUrl(presignedUrlRequest);
+                String shortURL = getShortenURL(url.toString());
+                textBody.append(key);
+                textBody.append("\n");
+                textBody.append(shortURL);
+                textBody.append("\n"); // add some white space to look nice
+                textBody.append("\n");
+            }
             // Prep the email to sent. This include specify TO address, FROM address, the message and the subject
             Destination destination = new Destination().withToAddresses(emailDestination);
             Body messageBody = new Body().withText(new Content().withCharset("UTF-8").withData(textBody.toString()));
@@ -150,19 +185,34 @@ public class RegisterAndGetBackUpHelper {
                     .withSource(FROM);
             sesClient.sendEmail(sendRequest);
             logger.log("Sent an email to user: " + user.getString(PRIMARY_KEY));
-        }
-        catch (Exception exception) {
+        } catch (Exception exception) {
             logger.log("Unable to send email because of this error");
             logger.log(exception.toString());
-            return "Amazon SES encountered an error while sending email";
+            return "Amazon SES encountered an error while sending email to this address:" + emailDestination;
         }
         return "Email was sent";
 
     }
 
-
-
-
+    /**
+     * This is a helper method to shorten the long presigned URL to a shorter one
+     * @param longURL The original long URL
+     * @return the shorten url in String
+     * @throws Exception when failed to make the request
+     */
+    private String getShortenURL(String longURL) throws Exception {
+        String json = "{\"longUrl\": \"" + longURL + "\"}";
+        String shortenerAPI = GOOGLE_SHORTEN_API + "?key=" + SHORTENER_API_KEY;
+        HttpPost postRequest = new HttpPost(shortenerAPI);
+        postRequest.setHeader("Content-Type", "application/json");
+        postRequest.setEntity(new StringEntity(json, "UTF-8"));
+        CloseableHttpClient httpClient = HttpClients.createDefault();
+        HttpResponse response = httpClient.execute(postRequest);
+        String responseText = EntityUtils.toString(response.getEntity());
+        Gson gson = new Gson();
+        HashMap<String, String> res = gson.fromJson(responseText, HashMap.class);
+        return res.get("id");
+    }
 
 
 }

@@ -131,7 +131,7 @@ public class Main {
      * @return a boolean value represent if the user is authenticated or not
      */
     private static boolean authenticateUser(String id, String password) {
-        boolean authenticated = false;
+
         Item item = table.getItem(DYNAMO_DB_HASH_KEY, id);
         if (item == null) {
             return false;
