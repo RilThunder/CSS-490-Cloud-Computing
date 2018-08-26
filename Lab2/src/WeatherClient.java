@@ -60,6 +60,8 @@ public class WeatherClient {
         } // end catch
     } // end main method
 
+
+
     /**
      * This is a private helper method to display the result of the request
      * It will parse the result and print out the temperature of the city in Celsius
